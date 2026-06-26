@@ -20,7 +20,7 @@ export default async function handler(req, res) {
         'X-Title': 'Book Insight Studio'
       },
       body: JSON.stringify({
-        model: 'google/gemma-3-4b-it:free',
+        model: 'openrouter/free',
         messages: messages,
         max_tokens: 2500
       })
