@@ -20,7 +20,7 @@ export default async function handler(req, res) {
         'X-Title': 'Book Insight Studio'
       },
       body: JSON.stringify({
-        model: 'anthropic/claude-sonnet-4-5',
+        model: 'meta-llama/llama-3.1-8b-instruct:free',
         messages: messages,
         max_tokens: 2500
       })
