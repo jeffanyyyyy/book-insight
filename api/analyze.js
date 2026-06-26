@@ -10,7 +10,7 @@ export default async function handler(req, res) {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${apiKey}`,
-        'HTTP-Referer': 'https://book-insight.vercel.app',
+        'HTTP-Referer': 'https://book-insight-chi.vercel.app',
         'X-Title': '書摘思考站'
       },
       body: JSON.stringify({
