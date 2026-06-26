@@ -14,7 +14,7 @@ export default async function handler(req, res) {
     const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json; charset=utf-8',
+        'Content-Type': 'application/json',
         'Authorization': `Bearer ${apiKey}`,
         'HTTP-Referer': 'https://book-insight-chi.vercel.app',
         'X-Title': 'Book Insight Studio'
@@ -22,7 +22,7 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         model: 'openrouter/free',
         messages: messages,
-        max_tokens: 2500
+        max_tokens: 2000
       })
     });
 
